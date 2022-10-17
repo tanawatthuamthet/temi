@@ -338,6 +338,14 @@ eyes.startBlinking()
         onValue(starCountRef, (snapshot) => {
             if(snapshot.val()=="happy"){
                 eyes.express({type: 'happy'})
+            }else if(snapshot.val()=="sad"){
+                eyes.express({type: 'sad'})
+            }else if(snapshot.val()=="angry"){
+                eyes.express({type: 'angry'})
+            }else if(snapshot.val()=="focused"){
+                eyes.express({type: 'focused'})
+            }else if(snapshot.val()=="confused"){
+                eyes.express({type: 'confused'})
             }
 
         })
